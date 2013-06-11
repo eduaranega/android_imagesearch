@@ -43,7 +43,7 @@ public class SearchActivity extends Activity {
 			public void onItemClick(AdapterView<?> adapter, View parent, int position, long rowId) {
 				Intent i = new Intent(getApplicationContext(), ImageDisplayActivity.class);
 				ImageResult imageResult = imageResults.get(position);
-				i.putExtra("url", imageResult.getFullUrl());
+				i.putExtra("result", imageResult);
 				startActivity(i);
 			}
 		});

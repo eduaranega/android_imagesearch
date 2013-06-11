@@ -1,12 +1,14 @@
 package com.android.eduardo.gridimagesearch;
 
+import java.io.Serializable;
 import java.util.ArrayList;
 
 import org.json.JSONArray;
 import org.json.JSONException;
 import org.json.JSONObject;
 
-public class ImageResult {
+public class ImageResult implements Serializable {
+	private static final long serialVersionUID = 2204361367302669814L;
 	private String fullUrl;
 	private String thumbUrl;
 	
